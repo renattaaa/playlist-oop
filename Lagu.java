@@ -38,8 +38,8 @@ public class Lagu {
         this.durasi = durasi;
     }
 
-    // Tampilkan detail lagu ke layar
-    public void tampilkanDetail() {
+    // Tampilkan info lagu ke layar
+    public void tampilkanInfo() {
         System.out.println("Judul    : " + judul);
         System.out.println("Penyanyi : " + penyanyi);
         System.out.println("Durasi   : " + durasi + " detik");

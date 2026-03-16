@@ -29,7 +29,7 @@ public class Admin extends User {
         } else {
             for (int i = 0; i < jumlahSekarang; i++) {
                 System.out.print((i + 1) + ". ");
-                playlist[i].tampilkanDetail();
+                playlist[i].tampilkanInfo();
                 System.out.println("--------------------------------");
             }
         }

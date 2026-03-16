@@ -34,7 +34,7 @@ public class Member extends User {
 
         if (index >= 0 && index < jumlahSekarang) {
             System.out.println("\n--- DETAIL LAGU ---");
-            playlist[index].tampilkanDetail();
+            playlist[index].tampilkanInfo();
         } else {
             System.out.println("Lagu tidak ditemukan.");
         }
