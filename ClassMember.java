@@ -3,7 +3,9 @@ public class Member extends User {
     public Member(String nama) {
         super(nama, "Member");
     }
-
+    
+// Nama : Nazif Alfarizi : NIS: 2902726914
+    
     // Override method dari class User
     @Override
     public void tampilkanAkses() {
