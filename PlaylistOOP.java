@@ -1,3 +1,15 @@
+/*
+Team Assignment 1 - Playlist OOP
+Mata Kuliah : Data Structures and Algorithm Analysis
+
+Anggota Kelompok:
+1. DAFFA FATHUR RAHMAN - 2902692586 - Computer Science
+2. HENDRIKUS AVERO WIDARTO - 2902734664 - Computer Science
+3. DUSTIN BALLQIS SAPUTRA - 2902730445 - Computer Science
+4. RENATA RAMADHANYANDRA - 2902696426 - Computer Science
+5. NAZIF ALFARIZI - 2902726914 - Computer Science
+*/
+
 public class PlaylistOOP {
 
     public static void main(String[] args) {
@@ -6,16 +18,16 @@ public class PlaylistOOP {
         Lagu[] playlist = new Lagu[10];
         int jumlahLagu = 0;
 
-        // Membuat objek Admin dan Member yang merupakan turunan dari class User (Inheritance)
+        // Membuat objek Admin dan Member yang merupakan turunan dari class User
         Admin admin = new Admin("AdminUtama");
         Member member = new Member("Member1");
 
-        // Method tampilkanAkses() menunjukkan polymorphism karena dioverride oleh Admin dan Member
+        // Menampilkan informasi akses pengguna (Polymorphism)
         System.out.println("\n===== INFORMASI PENGGUNA =====");
         admin.tampilkanAkses();
         member.tampilkanAkses();
 
-        // Admin menambahkan beberapa objek Lagu ke dalam array playlist
+        // Admin menambahkan beberapa lagu ke dalam playlist
         System.out.println("\n===== ADMIN MENAMBAHKAN LAGU =====");
 
         Lagu lagu1 = new Lagu("Beautiful Imperfection", "Guthrie Govan", 132);
@@ -30,23 +42,23 @@ public class PlaylistOOP {
         admin.tambahLagu(playlist, lagu3, jumlahLagu);
         jumlahLagu++;
 
-        // Admin menampilkan seluruh lagu yang ada di playlist
+        // Admin melihat seluruh lagu yang ada di sistem
         System.out.println("\n===== ADMIN MELIHAT PLAYLIST =====");
         admin.lihatDaftarLagu(playlist, jumlahLagu);
 
-        // Member juga dapat melihat daftar lagu yang tersedia
+        // Member melihat daftar lagu
         System.out.println("\n===== MEMBER MELIHAT PLAYLIST =====");
         member.lihatDaftarLagu(playlist, jumlahLagu);
 
-        // Member dapat melihat detail lagu berdasarkan index dalam array
+        // Member melihat detail salah satu lagu berdasarkan index
         System.out.println("\n===== MEMBER MELIHAT DETAIL LAGU =====");
         member.lihatDetailLagu(playlist, 1, jumlahLagu);
 
-        // Member menghitung rata-rata durasi lagu yang tersimpan dalam playlist
+        // Member menghitung rata-rata durasi lagu
         System.out.println("\n===== PERHITUNGAN RATA-RATA DURASI =====");
         member.hitungRataDurasi(playlist, jumlahLagu);
 
-        // Program selesai dijalankan setelah semua fitur playlist digunakan
+        // Program selesai
         System.out.println("\n===== SISTEM PLAYLIST SELESAI =====");
     }
 }
