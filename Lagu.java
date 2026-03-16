@@ -1,4 +1,4 @@
-class Lagu {
+public class Lagu {
 
     private String judul;
     private String penyanyi;
